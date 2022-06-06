@@ -1,13 +1,7 @@
 require('./bootstrap');
-import { createApp } from 'vue'
-import Vue3Marquee from 'vue3-marquee'
-import 'vue3-marquee/dist/style.css'
-import TopBar from './components/TopBar.vue'
 
-const app = createApp({})
+import Alpine from 'alpinejs';
 
-app.component('top-bar', TopBar)
+window.Alpine = Alpine;
 
-app.use(Vue3Marquee)
-
-app.mount('#app')
+Alpine.start();
