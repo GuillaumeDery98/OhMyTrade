@@ -14,5 +14,8 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         // \App\Models\User::factory(10)->create();
+        if (env('APP_ENV') == 'local' || env('APP_ENV') == 'development') {
+            \App\Models\User::factory(1)->asTestUser()->create();
+        }
     }
 }
