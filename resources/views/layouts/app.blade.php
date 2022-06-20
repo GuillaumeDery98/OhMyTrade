@@ -211,7 +211,11 @@
             </div>
         </div>
         <div class="md:pl-64 flex flex-col">
-            <top-bar></top-bar>
+            <top-bar :routes="{{ json_encode([
+                'ribbon' => route('api.ribbon.prices')
+                ])
+            }}">
+            </top-bar>
 
             <main class="flex-1">
                 <div class="py-6">
