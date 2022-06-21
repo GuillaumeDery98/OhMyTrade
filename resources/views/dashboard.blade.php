@@ -3,5 +3,5 @@
 Dashboard
 @endsection
 @section('content')
-test
+<chart></chart>
 @endsection
